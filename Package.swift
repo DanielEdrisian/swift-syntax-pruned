@@ -1,4 +1,4 @@
-// swift-tools-version:5.8
+// swift-tools-version:5.9
 
 import Foundation
 import PackageDescription
@@ -11,22 +11,9 @@ let package = Package(
     .macCatalyst(.v13),
   ],
   products: [
-//    .library(name: "SwiftBasicFormat", targets: ["SwiftBasicFormat"]),
     .library(name: "SwiftCompilerPlugin", targets: ["SwiftCompilerPlugin"]),
-//    .library(name: "SwiftDiagnostics", targets: ["SwiftDiagnostics"]),
-//    .library(name: "SwiftIDEUtils", targets: ["SwiftIDEUtils"]), // gone
-//    .library(name: "SwiftOperators", targets: ["SwiftOperators"]),
-//    .library(name: "SwiftParser", targets: ["SwiftParser"]),
-//    .library(name: "SwiftParserDiagnostics", targets: ["SwiftParserDiagnostics"]),
-//    .library(name: "SwiftRefactor", targets: ["SwiftRefactor"]), // gone
-//    .library(name: "SwiftSyntax", targets: ["SwiftSyntax"]),
     .library(name: "SwiftSyntaxBuilder", targets: ["SwiftSyntaxBuilder"]),
     .library(name: "SwiftSyntaxMacros", targets: ["SwiftSyntaxMacros"]),
-//    .library(name: "SwiftSyntaxMacroExpansion", targets: ["SwiftSyntaxMacroExpansion"]),
-//    .library(name: "SwiftSyntaxMacrosTestSupport", targets: ["SwiftSyntaxMacrosTestSupport"]), // gone
-//    .library(name: "SwiftSyntaxMacrosGenericTestSupport", targets: ["SwiftSyntaxMacrosGenericTestSupport"]), // gone
-//    .library(name: "_SwiftCompilerPluginMessageHandling", targets: ["SwiftCompilerPluginMessageHandling"]),
-//    .library(name: "_SwiftLibraryPluginProvider", targets: ["SwiftLibraryPluginProvider"]), // gone
   ],
   targets: [
     // MARK: - Internal helper targets
